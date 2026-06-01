@@ -8,6 +8,8 @@ https://www.youtube.com/watch?v=Z1RJmh_OqeA
 ```
 (do only if virtual env isnt installed)
 pip install virtualenv
-virtualenv env
+virtualenv venv
 ```
-2. f
+2. Install flask and flask and its sql like thing
+```
+pip install flask flask-sqlalchemy

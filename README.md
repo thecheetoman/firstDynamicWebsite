@@ -1,15 +1,36 @@
-# firstDynamicWebsite
-Me learning flask + python for a robotics project!
-link to videp
-https://www.youtube.com/watch?v=Z1RJmh_OqeA
+# FlaskIntroduction
 
-## Steps to run
-1. Create virtual enviroment in python
+> This repository has been archived and is no longer being updated.
+
+## How To Run
+1. Install `virtualenv`:
 ```
-(do only if virtual env isnt installed)
-pip install virtualenv
-virtualenv venv
+$ pip install virtualenv
 ```
-2. Install flask and flask and its sql like thing
+
+2. Open a terminal in the project root directory and run:
 ```
-pip install flask flask-sqlalchemy
+$ virtualenv env
+```
+
+3. Then run the command:
+```
+$ .\env\Scripts\activate
+```
+
+4. Then install the dependencies:
+```
+$ (env) pip install -r requirements.txt
+```
+
+5. Finally start the web server:
+```
+$ (env) python app.py
+```
+
+This server will start on port 5000 by default. You can change this in `app.py` by changing the following line to this:
+
+```python
+if __name__ == "__main__":
+    app.run(debug=True, port=<desired port>)
+```
